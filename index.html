@@ -1,58 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>Jowe Boy&apos;s Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Jowe Boy's Website - Servicios profesionales">
+		<title>Jowe Boy's Website</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		<header>
 			<div class="row">
 				<div class="logo">
-					<img src="assets/logo-new.png" alt="oe_logo">
+					<img src="assets/logo-new.png" alt="Jowe Boy Logo">
 				</div>
-				<ul class="main-nav">
-					<li class="active"><a href="">HOME</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
+				<nav>
+					<ul class="main-nav">
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li><a href="#services">SERVICES</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#blog">BLOG</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+						<li><a href="#faq">FAQ</a></li>
+					</ul>
+				</nav>
 			</div>
 			<div class="hero">
 				<h1>Ready for Action?</h1>
 				<div class="button">
-					<a href="" class="btn btn-one">Watch Video</a>
-					<a href="" class="btn btn-two">Explore More</a>
+					<a href="#video" class="btn btn-one">Watch Video</a>
+					<a href="#services" class="btn btn-two">Explore More</a>
 				</div>
 			</div>
 		</header>
-		<section class="service grid-container">
+
+		<section id="services" class="service grid-container">
+			<div class="grid-item service-text">
+				<h2>Our Services</h2>
+				<p>We offer a wide range of professional services tailored to meet your needs:</p>
+				<ul class="services-list">
+					<li>Web Development</li>
+					<li>Digital Marketing</li>
+					<li>Content Creation</li>
+					<li>SEO Optimization</li>
+				</ul>
+				<a href="#contact" class="btn service-btn">Get Started</a>
+			</div>
+			<div class="grid-item service-image">
+				<!-- Imagen de servicio o elemento visual -->
+			</div>
 		</section>
-		<section class="about grid-container">
+
+		<section id="about" class="about grid-container">
+			<div class="grid-item about-image">
+				<!-- Imagen para la sección about -->
+			</div>
+			<div class="grid-item about-text">
+				<h2>About Us</h2>
+				<p>Founded in 2020, Jowe Boy's has been at the forefront of innovation and quality service. Our team of experts is dedicated to providing you with the best solutions for your business.</p>
+				<p>Our mission is to empower businesses through technology and creative solutions that drive growth and success.</p>
+			</div>
 		</section>
-		<section class="blog grid-container">
+
+		<section id="blog" class="blog grid-container">
+			<div class="grid-item blog-header">
+				<h2>Latest from Our Blog</h2>
+			</div>
+			<div class="grid-container blog-posts">
+				<div class="grid-item blog-post">
+					<h3>New Trends in Web Design</h3>
+					<p class="date">April 10, 2025</p>
+					<p>Discover the latest trends in web design and how they can impact your online presence.</p>
+					<a href="#" class="read-more">Read More</a>
+				</div>
+				<div class="grid-item blog-post">
+					<h3>Digital Marketing Strategies</h3>
+					<p class="date">April 3, 2025</p>
+					<p>Learn effective digital marketing strategies to boost your business performance.</p>
+					<a href="#" class="read-more">Read More</a>
+				</div>
+			</div>
 		</section>
-		<section class="contact grid-container">
+
+		<section id="contact" class="contact grid-container">
 			<div class="contact-form grid-item">
 				<div class="contact-section-header">
 					<h2>Get in touch with us!</h2>
 				</div>
-				<form class="form">
-					<input type="text" name="fullname" placeholder="Fullname">
-					<input type="email" name="email" placeholder="Email Address">
+				<form class="form" action="submit_form.php" method="POST">
+					<input type="text" name="fullname" placeholder="Fullname" required>
+					<input type="email" name="email" placeholder="Email Address" required>
 					<input type="number" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your subject here..."></textarea>
+					<textarea class="subject" name="subject" placeholder="Your subject here..." required></textarea>
 					<input class="button" type="submit" value="Submit">
 				</form>
 			</div>
-			<div class="contact-form grid-item">
+			<div class="contact-form grid-item contact-info">
+				<div class="contact-details">
+					<h3>Contact Information</h3>
+					<p><strong>Email:</strong> info@joweboy.com</p>
+					<p><strong>Phone:</strong> +1 234 567 890</p>
+					<p><strong>Address:</strong> 123 Web Street, Digital City</p>
+					<div class="social-media">
+						<h3>Follow Us</h3>
+						<div class="social-icons">
+							<!-- Iconos de redes sociales podrían ir aquí -->
+							<a href="#" class="social-icon">Facebook</a>
+							<a href="#" class="social-icon">Twitter</a>
+							<a href="#" class="social-icon">Instagram</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="faq grid-container">
-		</section>
-	</body>
 
+		<section id="faq" class="faq grid-container">
+			<div class="grid-item faq-header">
+				<h2>Frequently Asked Questions</h2>
+			</div>
+			<div class="grid-item faq-content">
+				<div class="faq-item">
+					<h3>How do I request a quote?</h3>
+					<p>You can request a quote by filling out our contact form or calling our customer service number.</p>
+				</div>
+				<div class="faq-item">
+					<h3>What is your turnaround time?</h3>
+					<p>Our turnaround time varies depending on the project scope, but we always strive to deliver on time.</p>
+				</div>
+				<div class="faq-item">
+					<h3>Do you offer support after project completion?</h3>
+					<p>Yes, we offer dedicated support for all our projects to ensure everything runs smoothly.</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="assets/logo-new.png" alt="Jowe Boy Logo" class="footer-logo-img">
+				</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#faq">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<p>&copy; 2025 Jowe Boy's Website. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
