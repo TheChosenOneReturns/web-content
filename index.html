@@ -11,15 +11,17 @@
 		<header>
 			<div class="row">
 				<div class="logo">
-					<img src="assets/logo-new.png" alt="Jowe Boy Logo">
+					<a href="#">
+						<img src="assets/logo-new.png" alt="Jowe Boy Logo">
+					</a>
 				</div>
-				<nav>
+				<nav aria-label="Main navigation">
 					<ul class="main-nav">
-						<li class="active"><a href="#">HOME</a></li>
-						<li><a href="#">SERVICES</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">BLOG</a></li>
-						<li><a href="#">CONTACT</a></li>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
 						<li><a href="#">FAQ</a></li>
 					</ul>
 				</nav>
@@ -27,46 +29,59 @@
 
 			<div class="hero">
 				<h1>Ready for Action?</h1>
-				<div class="button-group">
-					<a href="#" class="btn btn-one">🎬 Watch Video</a>
-					<a href="#" class="btn btn-two">🚀 Explore More</a>
+				<div class="button-group" role="group" aria-label="Hero actions">
+					<a href="#" class="btn btn-one" role="button">🎬 Watch Video</a>
+					<a href="#" class="btn btn-two" role="button">🚀 Explore More</a>
 				</div>
 			</div>
 		</header>
 
-		<section class="service grid-container">
+		<section class="service grid-container" aria-labelledby="services-heading">
+			<h2 id="services-heading" class="visually-hidden">Our Services</h2>
 			<!-- Service content here -->
 		</section>
 
-		<section class="about grid-container">
+		<section class="about grid-container" aria-labelledby="about-heading">
+			<h2 id="about-heading" class="visually-hidden">About Us</h2>
 			<!-- About content here -->
 		</section>
 
-		<section class="blog grid-container">
+		<section class="blog grid-container" aria-labelledby="blog-heading">
+			<h2 id="blog-heading" class="visually-hidden">Our Blog</h2>
 			<!-- Blog content here -->
 		</section>
 
-		<section class="contact grid-container">
+		<section class="contact grid-container" aria-labelledby="contact-heading">
 			<div class="contact-form grid-item">
 				<div class="contact-section-header">
-					<h2>Get in touch with us!</h2>
+					<h2 id="contact-heading">Get in touch with us!</h2>
 					<p>We’d love to hear from you. Fill out the form below and we'll get back to you shortly.</p>
 				</div>
-				<form class="form">
-					<input type="text" name="fullname" placeholder="Full Name" required>
-					<input type="email" name="email" placeholder="Email Address" required>
-					<input type="tel" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your message..." required></textarea>
+				<form class="form" aria-label="Contact form">
+					<label for="fullname" class="visually-hidden">Full Name</label>
+					<input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+
+					<label for="email" class="visually-hidden">Email Address</label>
+					<input type="email" id="email" name="email" placeholder="Email Address" required>
+
+					<label for="phonenumber" class="visually-hidden">Phone Number</label>
+					<input type="tel" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+
+					<label for="subject" class="visually-hidden">Message</label>
+					<textarea id="subject" class="subject" name="subject" placeholder="Your message..." required></textarea>
+
 					<input class="btn btn-submit" type="submit" value="Submit">
 				</form>
 			</div>
 			<div class="contact-info grid-item">
-				<!-- Optional: Contact info or map -->
+				<!-- Optional: Contact info or embedded map -->
 			</div>
 		</section>
 
-		<section class="faq grid-container">
+		<section class="faq grid-container" aria-labelledby="faq-heading">
+			<h2 id="faq-heading" class="visually-hidden">Frequently Asked Questions</h2>
 			<!-- FAQ content here -->
 		</section>
 	</body>
 </html>
+
