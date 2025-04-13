@@ -1,8 +1,9 @@
-DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Jowe Boy&apos;s Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jowe Boy's Website</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 
@@ -10,49 +11,62 @@ DOCTYPE html>
 		<header>
 			<div class="row">
 				<div class="logo">
-					<img src="assets/logo-new.png" alt="oe_logo">
+					<img src="assets/logo-new.png" alt="Jowe Boy Logo">
 				</div>
-				<ul class="main-nav">
-					<li class="active"><a href="">HOME</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
+				<nav>
+					<ul class="main-nav">
+						<li class="active"><a href="#">HOME</a></li>
+						<li><a href="#">SERVICES</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">BLOG</a></li>
+						<li><a href="#">CONTACT</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</nav>
 			</div>
+
 			<div class="hero">
 				<h1>Ready for Action?</h1>
-				<div class="button">
-					<a href="" class="btn btn-one">Watch Video</a>
-					<a href="" class="btn btn-two">Explore More</a>
+				<div class="button-group">
+					<a href="#" class="btn btn-one">🎬 Watch Video</a>
+					<a href="#" class="btn btn-two">🚀 Explore More</a>
 				</div>
 			</div>
 		</header>
+
 		<section class="service grid-container">
+			<!-- Service content here -->
 		</section>
+
 		<section class="about grid-container">
+			<!-- About content here -->
 		</section>
+
 		<section class="blog grid-container">
+			<!-- Blog content here -->
 		</section>
+
 		<section class="contact grid-container">
 			<div class="contact-form grid-item">
 				<div class="contact-section-header">
 					<h2>Get in touch with us!</h2>
+					<p>We’d love to hear from you. Fill out the form below and we'll get back to you shortly.</p>
 				</div>
 				<form class="form">
-					<input type="text" name="fullname" placeholder="Fullname">
-					<input type="email" name="email" placeholder="Email Address">
-					<input type="number" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your subject here..."></textarea>
-					<input class="button" type="submit" value="Submit">
+					<input type="text" name="fullname" placeholder="Full Name" required>
+					<input type="email" name="email" placeholder="Email Address" required>
+					<input type="tel" name="phonenumber" placeholder="Phone Number">
+					<textarea class="subject" name="subject" placeholder="Your message..." required></textarea>
+					<input class="btn btn-submit" type="submit" value="Submit">
 				</form>
 			</div>
-			<div class="contact-form grid-item">
+			<div class="contact-info grid-item">
+				<!-- Optional: Contact info or map -->
 			</div>
 		</section>
+
 		<section class="faq grid-container">
+			<!-- FAQ content here -->
 		</section>
 	</body>
-
 </html>
