@@ -81,7 +81,7 @@ El formulario está preparado para conectarse fácilmente con backends o servici
 
 1. Cloná este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/jowe-boy-website.git
+   git clone https://github.com/TheChosenOneReturns/web-content.git
    cd jowe-boy-website
    ```
 
